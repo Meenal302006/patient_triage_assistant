@@ -1,3 +1,14 @@
+problem statement number:TRACK_ID=PS01
+problem statement:Healthcare - Patient Intake Triage Assistant (TRACK_ID=PS01)
+Patients arriving at intake describe their situation in incomplete, everyday language - and the cost of routing
+them wrongly is measured in outcomes, not minutes.
+Build a triage assistant that takes a patient's description in plain language, asks relevant follow-up questions
+when information is missing, and checks the case against a small set of triage rules covering common walk-in
+complaints - fever, injury, chest pain, breathing difficulty, abdominal pain. It produces a triage note: the
+recommended urgency level and department, the specific rule or reasoning behind the recommendation, what
+the patient reported versus what the follow-ups established, and what remains unknown. The system must
+not diagnose, must cite the rule behind every recommendation, and must escalate uncertain or high-risk
+cases to a human rather than guessing.
 # Patient Intake Triage Assistant
 
 A Streamlit prototype for multilingual patient-intake information collection and rule-based safety triage.
