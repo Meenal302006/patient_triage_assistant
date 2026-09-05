@@ -1,4 +1,5 @@
 problem statement number:TRACK_ID=PS01
+to run above project use the command:streamlit run app.py
 problem statement:Healthcare - Patient Intake Triage Assistant (TRACK_ID=PS01)
 Patients arriving at intake describe their situation in incomplete, everyday language - and the cost of routing
 them wrongly is measured in outcomes, not minutes.
