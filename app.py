@@ -1317,9 +1317,20 @@ def apply_direct_follow_up_answers(questions, answers):
 
             elif "moderate" in normalized:
                 extracted["severity"] = "moderate"
+                extracted["chest_pain_severe"] = False
+                extracted["chest_pain_pressure"] = False
 
             elif "mild" in normalized or "little" in normalized:
                 extracted["severity"] = "mild"
+                extracted["chest_pain_severe"] = False
+                extracted["chest_pain_pressure"] = False
+
+            elif any(
+                word in normalized
+                for word in ["no", "n", "not severe", "not pressure"]
+            ):
+                extracted["chest_pain_severe"] = False
+                extracted["chest_pain_pressure"] = False
 
         if "difficulty breathing" in question_text:
 
@@ -2572,8 +2583,8 @@ if (
             )
 
             additional_info = merge_patient_information(
-                additional_info,
-                direct_info
+                direct_info,
+                additional_info
             )
 
 
