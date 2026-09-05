@@ -1,0 +1,85 @@
+{
+    "version": "1.0",
+    "purpose": "Hackathon prototype rule catalogue",
+    "supported_complaints": [
+        "fever",
+        "injury",
+        "chest_pain",
+        "breathing_difficulty",
+        "abdominal_pain"
+    ],
+    "rules": [
+        {
+            "id": "CP-BD-01",
+            "complaint": "chest_pain",
+            "condition": "chest pain with breathing difficulty",
+            "urgency": "HIGH",
+            "department": "Emergency",
+            "next_step": "Seek immediate human clinical assessment.",
+            "human_review": true
+        },
+        {
+            "id": "CP-01",
+            "complaint": "chest_pain",
+            "condition": "severe or pressure-like chest pain",
+            "urgency": "HIGH",
+            "department": "Emergency",
+            "next_step": "Seek immediate human clinical assessment.",
+            "human_review": true
+        },
+        {
+            "id": "BD-01",
+            "complaint": "breathing_difficulty",
+            "condition": "severe breathing difficulty",
+            "urgency": "HIGH",
+            "department": "Emergency",
+            "next_step": "Seek immediate human clinical assessment.",
+            "human_review": true
+        },
+        {
+            "id": "BD-02",
+            "complaint": "breathing_difficulty",
+            "condition": "breathing difficulty with chest pain",
+            "urgency": "HIGH",
+            "department": "Emergency",
+            "next_step": "Seek immediate human clinical assessment.",
+            "human_review": true
+        },
+        {
+            "id": "AP-01",
+            "complaint": "abdominal_pain",
+            "condition": "severe or sudden abdominal pain",
+            "urgency": "HIGH",
+            "department": "Emergency",
+            "next_step": "Seek urgent human clinical assessment.",
+            "human_review": true
+        },
+        {
+            "id": "INJ-01",
+            "complaint": "injury",
+            "condition": "severe or uncontrolled bleeding",
+            "urgency": "HIGH",
+            "department": "Emergency",
+            "next_step": "Seek immediate human clinical assessment.",
+            "human_review": true
+        },
+        {
+            "id": "INJ-02",
+            "complaint": "injury",
+            "condition": "loss of consciousness after injury",
+            "urgency": "HIGH",
+            "department": "Emergency",
+            "next_step": "Seek immediate human clinical assessment.",
+            "human_review": true
+        },
+        {
+            "id": "FEV-01",
+            "complaint": "fever",
+            "condition": "fever with breathing difficulty",
+            "urgency": "HIGH",
+            "department": "Emergency",
+            "next_step": "Seek immediate human clinical assessment.",
+            "human_review": true
+        }
+    ]
+}
